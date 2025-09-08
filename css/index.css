@@ -1,0 +1,111 @@
+ /* ===== Reset & Base ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: #fff;
+      width: 100%;
+      max-width: 450px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .input-area {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .input-area input {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid #dddddd;
+      border-radius: 8px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .input-area button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor:pointer;
+      transition: background 0.4s;
+    }
+
+    .input-area button:hover {
+      background: #56d18b;
+      color: black;
+      
+    }
+
+    ul {
+      list-style: none;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    ul li {
+      background: #f8f9fa;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s;
+    }
+
+    ul li.completed {
+      text-decoration: line-through;
+      background: #d4edda;
+      color: #155724;
+    }
+
+    ul li button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 8px;
+    }
+
+    ul li .delete {
+      color: #dc3545;
+    }
+
+    ul li .done {
+      color: #28a745;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 480px) {
+      .input-area {
+        flex-direction: column;
+      }
+      .input-area button {
+        width: 100%;
+      }
+    }
